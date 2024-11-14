@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;  /*外側の余白*/
+    padding: 0; /*内側の余白*/
+    background-color: #f9f9f9;
+    color: #333
+}
+header,footer{
+    background-color: #333;/*同じ2桁の数字が並ぶとき、省略できる*/
+    color: white;
+    text-align: center;
+}
+main{
+    padding: 1em;/*1emはフォントサイズに対してどれほどの余白をつけるか。
+    　　　　　　　　今回は1emなので、親フォントサイズの1倍分の余白が出来る*/
+}

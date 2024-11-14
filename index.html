@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>
+
+         /* <body>タグに適用されるスタイル */
+            body {
+            margin: 0;  /* マージンをゼロにして */
+            padding: 0; /* パディングをゼロにして */
+        }
+         pre {
+            margin: 1em;  
+            padding: 1em; 
+            font-size: 1.2em;  /* 文字サイズを調整 */
+            line-height: 1.5;  /* 行間を調整 */
+            white-space: pre;  /* 改行やスペースをそのまま表示 */
+        }
+
+        pre code {
+            display: block;  /* コードをブロック要素にして全幅で表示 */
+            font-size: 1.2em;  /* 文字サイズを調整 */
+            line-height: 1.5;  /* 行間を調整 */
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1 style="font-family: 'Courier New', Courier, monospace;">Chiruto's Portfolio</h1>
+            <p>観に来てくれてありがとうございます！！！！</p>
+        </header>
+        <main>
+            <section>
+            <hs>自己紹介</hs>
+            <p>日々プログラミングの進捗を更新しています。</p>
+            <h2>目次</h2>
+            <a href="#section1">ゲーム制作実績へ移動</a><br>
+            <a href="#section2">プログラミングブログへ移動</a>
+            </section>
+            <section>
+                <h3 id="section1">ゲーム制作活動について</h3>
+                <p>過去のプロジェクトについて紹介します。</p>
+                <h1>過去の作品を一気見！</h1>
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/hh2qHRvRfpM" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                </iframe>
+                <p>これらのプロジェクトは<h3>全てUnityとC#を用いて制作</h3>してあります。
+                    <br><br><h4>1番目のMETROID(ライク)は授業で制作＋自分で機能を追加したものとなります。</h4>
+                    2024年5月に制作済みの作品です。
+                    <br>初めてのゲーム制作ということもあり、関数などの使い方を手探りで作っていました。
+                </p><br>
+                <p><h4>2番目のゲームはランゲームです。２週間で制作するという課題で制作したものになります</h4>
+                    2024年9月に作ったものになります。
+                </p><br>
+                <p><h4>3番目のゲームは現在(2024年11月現在)の製作途中のゲームです。</h4>
+                    9つの柱を集めてクリアを目指す3Dプラットフォームアクションゲームとなっております。
+                </p><br>
+                <p><h4>4番目のゲームはいわゆる登山ゲームです。</h4>
+                    2024年7月に制作済みの作品です。(動画の関係上時系列がずれています)
+                    <br>キャラを自由に動かせる爽快感や、様々なギミックを用意してあります。
+                </p><br>
+            </section>
+            <section>
+                <h1 id="section2">プログラミングブログ</h1>
+                <h4>このセクションでは日々学んでいるプログラミング技術についてまとめています。</h4>
+                復習もかねて書いているのでよろしくお願いします。
+
+                <h2>C++編</h2>
+                <a href="#cppsection1">1.入出力編</a><br>
+                <a href="#cppsection2">2.演算編</a><br>
+                <a href="#cppsection3">3.関数編</a><br>
+                <a href="#cppsection4">4.ポインタ編</a><br>
+                <a href="#cppsection5">5.配列編</a><br>
+                <a href="#cppsection6">6.文字列編</a><br>
+                <a href="#cppsection7">7.構造体編</a><br>
+                <a href="#cppsection8">8.クラス編</a><br>
+                <a href="#cppsection9">9.継承編</a><br>
+                 <a href="#cppsection10">10.行列編</a>
+                <section>
+                    <h4 id="cppsection1">入出力編</h4>
+                    この章では主な入出力についてまとめてあります。
+                    <p>早速ですが<strong>&lt;iostream&gt;</strong>を使って出力を行ってみようと思います。
+                        下の呪文(コード)を書いて<strong>『CTRL』+『F5』</strong>を同時押しで実行してみてください。
+                        <br>もしくはローカル Windowsデバッガーと書いてあるところをクリックしてね。
+                    </p>
+
+                    <img src="images/stdcout.png" alt="Hello World！と出力するコード" width="618" height="124">
+                    <br><strong>どうでしょうか！</strong>といわれてもピンとこないですよね。
+                    <br>ということで1行ずつ解説していきます。
+                    <br><br><strong>1行目</strong>
+                    <br>#includeというのはC++が勝手に用意してくれている関数を使えるようにする魔法です！
+                    <br>というのも、プログラムで標準ライブラリというものを用いるためにヘッダーファイルを読み込んでいるんですね。
+                    <br>今回は<strong>&lt;iostream&gt;</strong>というファイルを読み込んでいます。
+                    <br>このファイルはstd::系の中でも<strong>入出力系</strong>を得意としています。
+                    <br><br><strong>2行目</strong>
+                    <br>見やすいように改行してるだけです！なくてもいいけど読みやすいでしょ？
+                    <br><br><strong>3行目</strong>
+                    <br><strong>int main()</strong>ってなんだ！と思ったそこのあなた！
+                    <br><strong>この英語をたったの2単語書くだけでなんとその中に書いた命令をすべて受け取ってくれます！</strong>
+                    <br>便利ですね！.....その()とかはなんだって？
+                    <br>この()は今は気にしないでください。気になる人は中にvoidって書いてカッコよくしといてください(？)
+                    <br>詳しくは関数編で話すつもりなのでそちらへ飛んでください。
+                    <br><br><strong>4行目</strong>
+                    <br>さて、謎の{}の時間ですね。
+                    <br>基本的にはこの中に書かないと<strong>「俺は無視するけど」</strong>といった感じでエラーが出ます。
+                    <br><strong>int main(){この中に命令したいことを書く}といったフォーマットですね</strong>
+                    <br><br><strong>5行目</strong>
+                    <br>ようやく待ちに待った命令の内容です。
+                    <br>std::cout&lt;&lt;とすると、その先にある文字列をコンソール(起動した際になんか出るやつ)に出してくれます
+                    <br>今回は"Hello World!"と出力されましたね。
+                    <br>...おっと？￥nはどこへいった？と気づいたあなた、鋭いです。
+                    <br>￥nはC++で<strong>改行</strong>を意味します。
+                    <br>環境によっては＼nとでるかもしれないですが、同じ意味です。
+                    <br>最後に}で締めくくって終わりです！お疲れさまでした！
+                    <br><br><strong>出力編(std::cout)...完</strong>
+                </section>
+                <section>
+                    <h4 id="cppsection2">演算編</h4>
+                </section>
+                <section>
+                    <h4 id="cppsection3">関数編</h4>
+                </section>
+                <section>
+                    <h4 id="cppsection4">ポインタ編</h4>
+                </section>
+                <section>
+                    <h4 id="cppsection5">配列編</h4>
+                </section>
+                <section>
+                    <h4 id="cppsection6">文字列編</h4>
+                </section>
+                <section>
+                    <h4 id="cppsection7">構造体編</h4>
+                </section>
+                <section>
+                    <h4 id="cppsection8">クラス編</h4>
+                </section>
+                <section>
+                    <h4 id="cppsection9">継承編</h4>
+                </section>
+                
+                <section>
+                    <h4 id="cppsection10">行列編</h4>
+                    この章では、独自に作った簡単な行列計算システムについて解説しています。
+                    <br><p>今回は7つの機能を作ってみました。</p>
+                    
+                    <br><br><strong>メイン関数</strong>
+                     <br><img src="images/matrix_main.png" alt="メイン関数" width="564" height="580">
+                    <br>ユーザーからの入力によって何を実行するのか決めています。
+                    
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            2024年11月14日更新<br>
+            <p>お問い合わせはこちらまで:chirutosan@gmail.com</p>
+        </footer>
+    </body>
+</html>
